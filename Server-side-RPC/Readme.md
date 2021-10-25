@@ -1,4 +1,4 @@
-# Server side RPC
+# RPC 觀察: Lightweight RPC VS Persistent RPC
 
 ## 特性比較
 
