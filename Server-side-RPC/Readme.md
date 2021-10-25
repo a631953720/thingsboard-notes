@@ -1,12 +1,8 @@
-# RPC
-
-type: other
-
 # Server side RPC
 
 ## 特性比較
 
-### L**ightweight** RPC
+### Lightweight RPC
 
 - 在 TB 3.3 之前的版本僅支援Lightweight RPC
 - 此RPC的呼叫通常不會等待太久
@@ -20,7 +16,7 @@ type: other
 - 等待時間 ≥ 30秒
 - 消耗資源量較大，會存入DB
 
-## **Persistent RPC 介紹**
+## Persistent RPC 介紹
 
 ### 有七種狀態
 
@@ -49,7 +45,7 @@ type: other
 ## 使用情境
 
 - Server 嘗試發送 RPC 請求給 Client
-- RPC 請求可用 L**ightweight** 或是 **Persistent**
+- RPC 請求可用 **Lightweight** 或是 **Persistent**
 - 若 RPC 出現「可預期」的錯誤，針對該錯誤類型處理
 
 ## Rule chain
@@ -58,7 +54,7 @@ type: other
 
 ![root rule chain.png](images/root_rule_chain.png)
 
-## L**ightweight RPC**
+## Lightweight RPC
 
 Lightweight RPC 會執行的路徑如圖片上標記的位置，在 RPC Call Request node會嘗試發送 RPC 請求到Client，若沒有回應或是其他錯誤就會標記為 Failure。
 
