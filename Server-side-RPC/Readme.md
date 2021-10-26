@@ -66,16 +66,16 @@ Lightweight RPC 會執行的路徑如圖片上標記的位置，在 RPC Call Req
 
 - TIMEOUT
     - Client MQTT 有連線但沒有回應
+    - ![Untitled](images/Untitled%202.png)
 - NO_ACTIVE_CONNECTION
     - Client MQTT 沒有連線
+    - ![Untitled](images/Untitled%201.png)
 
-![Untitled](images/Untitled%201.png)
 
-![Untitled](images/Untitled%202.png)
 
 ## Persistent RPC
 
-Persistent RPC 會執行的路徑如圖片上標記的位置，與 Lightweight RPC 不同的是 RPC 請求會直接標記為 Success。
+Persistent RPC 會執行的路徑如圖片上標記的位置，與 Lightweight RPC 不同的是 RPC 請求會直接標記為 Success。若超過等待時間沒有收到回應，會產生 RPC Expired 的訊息，此範例會產生 Alert 到目標裝置。
 
 ![persistent log.png](images/persistent_log.png)
 
